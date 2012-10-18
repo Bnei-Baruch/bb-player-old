@@ -1,7 +1,7 @@
-require('ember-skeleton/core');
-require('ember-skeleton/store');
-require('ember-skeleton/router');
-require('ember-skeleton/controllers');
-require('ember-skeleton/views');
+require('bb-player/core');
+require('bb-player/store');
+require('bb-player/router');
+require('bb-player/controllers');
+require('bb-player/views');
 
 App.initialize();

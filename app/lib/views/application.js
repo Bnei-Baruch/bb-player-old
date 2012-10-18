@@ -1,5 +1,5 @@
-require('ember-skeleton/core');
+require('bb-player/core');
 
 App.ApplicationView = Ember.View.extend({
-  templateName: 'ember-skeleton/~templates/application'
+  templateName: 'bb-player/~templates/application'
 });

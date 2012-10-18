@@ -1,3 +1,3 @@
-require('ember-skeleton/core');
+require('bb-player/core');
 
 App.ApplicationController = Ember.Controller.extend();

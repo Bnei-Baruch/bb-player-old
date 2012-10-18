@@ -1,4 +1,4 @@
-APPNAME = 'ember-skeleton'
+APPNAME = 'bb-player'
 
 require 'colored'
 require 'rake-pipeline'

@@ -1,8 +1,8 @@
 
-loader.register('tests/ember-skeleton_tests', function(require) {
-require('ember-skeleton/core');
+loader.register('tests/bb-player_tests', function(require) {
+require('bb-player/core');
 
-module("ember-skeleton");
+module("bb-player");
 
 test("App is defined", function () {
   ok(typeof App !== 'undefined', "App is undefined");

@@ -1,7 +1,7 @@
 
-loader.register('ember-skeleton/~templates/application', function(require) {
+loader.register('bb-player/~templates/application', function(require) {
 
-return Ember.Handlebars.compile("<nav role=\"navigation\" class=\"navbar navbar-fixed-top navbar-inverse\">\n  <div class=\"navbar-inner\">\n    <div class=\"container\">\n      <a class=\"brand\" href=\"#\">ember-skeleton</a>\n    </div>\n  </div>\n</nav>\n<div id=\"main\" role=\"main\" class=\"container\">\n  ember-skeleton v{{App.VERSION}}\n</div>\n");
+return Ember.Handlebars.compile("<nav role=\"navigation\" class=\"navbar navbar-fixed-top navbar-inverse\">\n  <div class=\"navbar-inner\">\n    <div class=\"container\">\n      <a class=\"brand\" href=\"#\">bb-player</a>\n    </div>\n  </div>\n</nav>\n<div id=\"main\" role=\"main\" class=\"container\">\n  bb-player v{{App.VERSION}}\n</div>\n");
 
 });
 
@@ -39118,25 +39118,25 @@ Handlebars.template = Handlebars.VM.template;
 
 });
 
-loader.register('ember-skeleton/controllers', function(require) {
-require('ember-skeleton/controllers/application');
+loader.register('bb-player/controllers', function(require) {
+require('bb-player/controllers/application');
 
 });
 
-loader.register('ember-skeleton/controllers/application', function(require) {
-require('ember-skeleton/core');
+loader.register('bb-player/controllers/application', function(require) {
+require('bb-player/core');
 
 App.ApplicationController = Ember.Controller.extend();
 
 });
 
-loader.register('ember-skeleton/core', function(require) {
+loader.register('bb-player/core', function(require) {
 require('jquery');
 require('handlebars');
 require('ember');
 require('ember-data');
-require('ember-skeleton/ext');
-require('ember-skeleton/env');
+require('bb-player/ext');
+require('bb-player/env');
 
 App = Ember.Application.create({
   VERSION: '0.1'
@@ -39144,7 +39144,7 @@ App = Ember.Application.create({
 
 });
 
-loader.register('ember-skeleton/env', function(require) {
+loader.register('bb-player/env', function(require) {
 ENV = typeof ENV !== 'undefined' ? ENV : {
   CP_DEFAULT_CACHEABLE: true,
   VIEW_PRESERVES_CONTEXT: true
@@ -39152,7 +39152,7 @@ ENV = typeof ENV !== 'undefined' ? ENV : {
 
 });
 
-loader.register('ember-skeleton/ext', function(require) {
+loader.register('bb-player/ext', function(require) {
 var get = Ember.get, fmt = Ember.String.fmt;
 
 Ember.View.reopen({
@@ -39176,19 +39176,19 @@ Ember.View.reopen({
 
 });
 
-loader.register('ember-skeleton/main', function(require) {
-require('ember-skeleton/core');
-require('ember-skeleton/store');
-require('ember-skeleton/router');
-require('ember-skeleton/controllers');
-require('ember-skeleton/views');
+loader.register('bb-player/main', function(require) {
+require('bb-player/core');
+require('bb-player/store');
+require('bb-player/router');
+require('bb-player/controllers');
+require('bb-player/views');
 
 App.initialize();
 
 });
 
-loader.register('ember-skeleton/router', function(require) {
-require('ember-skeleton/core');
+loader.register('bb-player/router', function(require) {
+require('bb-player/core');
 
 App.Router = Ember.Router.extend({
   enableLogging: true,
@@ -39202,25 +39202,25 @@ App.Router = Ember.Router.extend({
 
 });
 
-loader.register('ember-skeleton/store', function(require) {
-require('ember-skeleton/core');
+loader.register('bb-player/store', function(require) {
+require('bb-player/core');
 
 App.store = DS.Store.create({
-  revision: 4
+  revision: 6
 });
 
 });
 
-loader.register('ember-skeleton/views', function(require) {
-require('ember-skeleton/views/application');
+loader.register('bb-player/views', function(require) {
+require('bb-player/views/application');
 
 });
 
-loader.register('ember-skeleton/views/application', function(require) {
-require('ember-skeleton/core');
+loader.register('bb-player/views/application', function(require) {
+require('bb-player/core');
 
 App.ApplicationView = Ember.View.extend({
-  templateName: 'ember-skeleton/~templates/application'
+  templateName: 'bb-player/~templates/application'
 });
 
 });

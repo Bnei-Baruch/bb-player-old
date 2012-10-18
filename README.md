@@ -12,7 +12,7 @@ Running
 App Structure
 -------------
 
-    ember-skeleton
+    bb-player
     ├── Assetfile - App build file
     ├── Gemfile - Package dependencies for rakep/rack
     ├── Gemfile.lock - Here be dragons: don't touch, always include
@@ -56,3 +56,22 @@ Or you can run the tests via:
 If you want to continuously run the tests every time a file changes, invoke:
 
     $ bundle exec guard
+
+Building
+--------
+
+You can build your app by invoking:
+
+    $ bundle exec rake build
+
+This will pack all the files in app into the directory assets/
+according to the instructions in Assetfile
+
+If you execute 
+
+    $ bundle exec rackup
+
+you can access the application on http://localhost:9292/index.html
+It's also possible to create a minified version of your code via 
+   
+    $ RAKEP_MODE=production bundle exec rakep

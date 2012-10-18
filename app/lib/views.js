@@ -1,1 +1,1 @@
-require('ember-skeleton/views/application');
+require('bb-player/views/application');

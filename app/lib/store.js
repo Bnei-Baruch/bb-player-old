@@ -1,5 +1,5 @@
-require('ember-skeleton/core');
+require('bb-player/core');
 
 App.store = DS.Store.create({
-  revision: 4
+  revision: 6
 });

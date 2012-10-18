@@ -1,1 +1,1 @@
-require('ember-skeleton/controllers/application');
+require('bb-player/controllers/application');
